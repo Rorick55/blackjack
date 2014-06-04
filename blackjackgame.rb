@@ -30,6 +30,7 @@ class BlackjackGame
     puts "Player was delt #{@players_hand.first_card.show_card}"
     puts "Player was delt #{@players_hand.last_card.show_card}"
     puts "Players Score: #{@players_hand.score}"
+    puts
   end
 
   def hit_or_stay
@@ -41,7 +42,7 @@ class BlackjackGame
       puts "Players Score: #{@players_hand.score}"
       if bust?(@players_hand.score)
         puts "Bust!"
-         break
+        break
       end
       puts
       puts "Hit or stay?"
@@ -62,7 +63,7 @@ class BlackjackGame
         puts "Dealer Score: #{@dealers_hand.score}"
         if bust?(@dealers_hand.score)
           puts "Bust!"
-           break
+          break
         end
         puts
       end
